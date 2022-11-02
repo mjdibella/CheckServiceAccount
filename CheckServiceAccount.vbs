@@ -108,7 +108,7 @@ if WScript.Arguments.Count > 0 then
 					if iUserCertCount > 0 then
 						sMsg = sMsg & vbCRLF & "The account contains " & CStr(iUserCertCount) & " user certificates." 
 						if iUserCertCount > ADS_MV_LIMIT_WARNING then
-							sMsg = sMsg & vbCRLF & "The number of user certificate is approaching the administrative limit." 
+							sMsg = sMsg & vbCRLF & "The number of user certificates is approaching the administrative limit." 
 						end if
 					end if
 					if iUserAccountControl And ADS_UF_DONT_EXPIRE_PASSWD then
